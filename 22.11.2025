@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int resultado = 0;
+
+void calcularSomaGlobal (int a, int b) {
+    resultado = a+b;
+    printf ("Resultado global: %d\n", resultado);
+}
+void CalcularSomaLocal (int a, int b) {
+    int resultado = a+b;
+    printf ("Resultado local: %d\n", resultado);
+}
+int main (){
+    calcularSomaGlobal(3, 10);
+    CalcularSomaLocal (2,6);
+    printf ("Resultado global após as chamadas: %d\n", resultado);
+    
+    return 0;
+}
