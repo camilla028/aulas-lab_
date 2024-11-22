@@ -1,3 +1,32 @@
+
+exercício 1
+
+#include <stdio.h>
+
+int contador = 0;
+
+void incrementarContador() {
+    contador++;
+    printf("Contador global: %d\n", contador);
+}
+void exemploVariavelLocal() {
+  int valorLocal = 10;
+  valorLocal++;
+  printf("Valor local: %d\n", valorLocal);
+}
+int main() {
+  for (int i = 0; i < 5; i++) {
+   incrementarContador();
+    exemploVariavelLocal();
+    }
+
+    return 0;
+}
+
+
+exercício 2
+
+
 #include <stdio.h>
 
 int resultado = 0;
@@ -17,3 +46,7 @@ int main (){
     
     return 0;
 }
+
+
+
+
